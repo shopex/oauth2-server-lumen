@@ -12,7 +12,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     public function register()
     {
         $this->setupConfig();
-        $this->registerStorageBindings();
+        $this->registerRepositoryBindings();
     }
 
     /**
@@ -53,5 +53,25 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
         $app->singleton('onex.oauth2.repository.access.token', function ($app) {
             
         });
+    }
+
+    public function registerClientRepository()
+    {
+    }
+
+    public function registerRefreshTokenRepository()
+    {
+    }
+
+    public function registerScopeRepository()
+    {
+    }
+
+    public function registerAuthCodeRepository()
+    {
+    }
+
+    public function registerUserRepository()
+    {
     }
 }

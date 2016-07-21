@@ -17,12 +17,15 @@
         "illuminate/contracts": "5.1.* || 5.2.*",
         "illuminate/http": "5.1.* || 5.2.*",
         "illuminate/support": "5.1.* || 5.2.*",
-        "illuminate/config": "5.1.* || 5.2.*"
+        "illuminate/config": "5.1.* || 5.2.*",
+
+        "symfony/psr-http-message-bridge": "0.*",
     },
     "autoload": {
         "psr-4": {
             "Onex\\OAuth2Server\\": "src"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
 
