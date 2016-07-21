@@ -50,7 +50,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     }
 
     public function registerAccessTokenRepository() {
-        $app->singleton('onex.oauth2.repository.access.token', function ($app) {
+        $this->app->singleton('onex.oauth2.repository.access.token', function ($app) {
             
         });
     }
